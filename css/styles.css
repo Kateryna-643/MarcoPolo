@@ -1,0 +1,127 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #1B1C1C;
+    background-color: #FFFCFF;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+img {
+    display: block;
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+address {
+    font-style: normal;
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    max-width: 320px;
+    padding: 0 24px;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    padding-top: 24px;
+}
+
+.mob-menu {
+    fill: #FFFCFF;
+    stroke: #1B1C1C; 
+    margin-left: auto;
+}
+
+.hero {
+    background: #1B1C1C;
+    background-image: linear-gradient(rgba(36, 33, 33, 0.16), rgba(36, 33, 33, 0.16)), url(/images/hero-mob-1x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    background-position: center;
+    width: 320px;
+    padding: 140px 0;
+    position: relative;
+}
+
+.hero-title {
+    font-weight: 600;
+    font-size: 32px;
+    text-align: center;
+    color: #FFFCFF;
+    text-shadow:
+        -1px -1px 0 rgba(0, 0, 0, 0.32),
+        1px -1px 0 rgba(0, 0, 0, 0.32),
+        -1px 1px 0 rgba(0, 0, 0, 0.32),
+        1px 1px 0 rgba(0, 0, 0, 0.32);
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.hero-btn {
+    margin: 0 auto;
+    display: block;
+    font-weight: 500;
+    font-size: 12px;
+    text-align: center;
+    color: #fffcff;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    background-color: #ee5b4b;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.32);
+    padding: 12px 12px;
+}
+
+.about-title {
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+    color: #007c6e;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-top: 56px;
+    margin-bottom: 36px;
+}
+
+.about-list-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 68px;
+}
+
+.list-item-text {
+    font-size: 16px;
+    color: #1B1C1C;
+}
+           
