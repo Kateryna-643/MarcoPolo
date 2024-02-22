@@ -39,7 +39,7 @@
       </section>
       <section class="about">
         <div class="container">
-          <h2 class="about-title">Про нас</h2>
+          <h2 class="section-title">Про нас</h2>
           <p class="about-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -82,7 +82,109 @@
           </ul>
         </div>
       </section>
+      <section class="courses">
+        <div class="container">
+          <h2 class="section-title">Курси</h2>
+          <div class="card">
+            <picture>
+              <source
+                srcset="
+                  ./images/courses-img1-mob-1x.jpg 1x,
+                  ./images/courses-img1-mob-2x.jpg 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img
+                src="./images/courses-img1-mob-1x.jpg"
+                class="card-img"
+                alt="Стандарт"
+                width="248"
+              />
+            </picture>
+            <h3 class="card-title">"Стандарт"</h3>
+            <button type="button" class="card-btn">Дізнатися більше</button>
+          </div>
+        </div>
+      </section>
+      <section class="feedbacks">
+        <div class="container">
+          <h2 class="section-title">Відгуки</h2>
+          <div class="feedback-card">
+            <div class="feedback-top">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea.
+              </p>
+            </div>
+            <div class="feedback-bottom">
+              <p>Єгор, 32 роки</p>
+              <picture>
+                <source
+                  srcset="
+                    ./images/feedbacks-img1-mob-1x.png 1x,
+                    ./images/feedbacks-img1-mob-2x.png 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/feedbacks-img1-mob-1x.png"
+                  class="feedback-img"
+                  alt="Єгор"
+                  width="78"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <div class="container">
+        <div class="logo-wrap">
+          <img src="./images/MarcoPolo-logo.svg" alt="logo" width="176" />
+          <p class="footer-text">Онлайн-школа італійської мови</p>
+        </div>
+        <ul class="footer-soc-list">
+          <li class="soc-list-item">
+            <svg width="40" height="40" class="soc-icon">
+              <use href="./images/symbol-defs.svg#icon-insta"></use>
+            </svg>
+          </li>
+          <li class="soc-list-item">
+            <svg width="40" height="40" class="soc-icon">
+              <use href="./images/symbol-defs.svg#icon-fb"></use>
+            </svg>
+          </li>
+          <li class="soc-list-item">
+            <svg width="40" height="40" class="soc-icon">
+              <use href="./images/symbol-defs.svg#icon-tg"></use>
+            </svg>
+          </li>
+          <li class="soc-list-item">
+            <svg width="40" height="40" class="soc-icon">
+              <use href="./images/symbol-defs.svg#icon-viber"></use>
+            </svg>
+          </li>
+        </ul>
+        <p class="footer-text">Дізнавайся актуальні новини першим!</p>
+        <form class="footer-form">
+          <label for="email"></label>
+          <input
+            class="form-input"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="E-mail"
+          />
+          <button type="submit" class="footer-btn">
+            <svg width="20" height="20" class="footer-btn-icon">
+              <use href="./images/symbol-defs.svg#icon-send-icon"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </footer>
   </body>
 </html>
