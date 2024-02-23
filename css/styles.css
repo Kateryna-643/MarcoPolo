@@ -40,7 +40,7 @@ button {
 }
 
 .container {
-    max-width: 320px;
+    min-width: 320px;
     padding: 0 24px;
 }
 
@@ -156,6 +156,22 @@ button {
     align-items: center;
     padding-top: 12px;
     padding-bottom: 30px;
+}
+
+.courses-list .card:nth-child(even){
+    background-color: #FFFCFF;
+}
+
+.courses-list .card:nth-child(even) .card-btn {
+    color:#1B1C1C;
+}
+
+.courses-list .card:nth-child(even) .card-title {
+    color: #1B1C1C;
+}
+
+.courses-list .card:nth-child(3) {
+    background-color: #ee5b4b;
 }
 
 .card-img {
