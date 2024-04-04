@@ -20,7 +20,7 @@
     <title>MarcoPolo</title>
   </head>
   <body>
-    <!--<header class="header">
+    <header class="header">
       <div class="container">
         <svg class="logo" width="178" height="27">
           <use href="./images/symbol-defs.svg#icon-marcopolo-logo"></use>
@@ -28,6 +28,17 @@
         <svg class="mob-menu-icon" width="32" height="25">
           <use href="./images/symbol-defs.svg#icon-mob-menu"></use>
         </svg>
+        <ul class="menu-tab-list">
+          <li class="menu-tab-item">
+            <a href="#about">Про нас</a>
+          </li>
+          <li class="menu-tab-item">
+            <a href="#courses">Курси</a>
+          </li>
+          <li class="menu-tab-item">
+            <a href="#feedbacks">Відгуки</a>
+          </li>
+        </ul>
       </div>
       <div class="mob-menu">
         <button class="menu-close-btn" type="button">
@@ -93,8 +104,8 @@
           </ul>
         </div>
       </div>
-    </header>-->
-    <!--<main>
+    </header>
+    <main>
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Онлайн-школа італійської мови</h1>
@@ -110,6 +121,25 @@
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
             aliquip ex ea commodo consequat.
           </p>
+          <picture>
+            <source
+              srcset="
+                ./images/about-tab-1x.jpg 1x,
+                ./images/about-tab-2x.jpg 2x
+              "
+              media="(min-width:768px)"
+            />
+            <source
+              srcset="./images/about-dt-1x.jpg 1x, ./images/about-dt-2x.jpg 2x"
+              media="(min-width:1280px)"
+            />
+            <img
+              src="./images/about-tab-1x.jpg"
+              class="about-img"
+              alt="Про нас"
+              width="480"
+            />
+          </picture>
           <div class="about-list-title">
             <svg width="176" height="25">
               <use href="./images/symbol-defs.svg#icon-marcopolo-logo"></use>
@@ -157,7 +187,7 @@
                     ./images/courses-img1-mob-1x.jpg 1x,
                     ./images/courses-img1-mob-2x.jpg 2x
                   "
-                  media="(max-width: 767px)"
+                  media="(max-width:1279px)"
                 />
                 <img
                   src="./images/courses-img1-mob-1x.jpg"
@@ -176,7 +206,7 @@
                     ./images/courses-img2-mob-1x.jpg 1x,
                     ./images/courses-img2-mob-2x.jpg 2x
                   "
-                  media="(max-width: 767px)"
+                  media="(max-width: 1279px)"
                 />
                 <img
                   src="./images/courses-img2-mob-1x.jpg"
@@ -195,7 +225,7 @@
                     ./images/courses-img3-mob-1x.jpg 1x,
                     ./images/courses-img3-mob-2x.jpg 2x
                   "
-                  media="(max-width: 767px)"
+                  media="(max-width: 1279px)"
                 />
                 <img
                   src="./images/courses-img3-mob-1x.jpg"
@@ -214,7 +244,7 @@
                     ./images/courses-img4-mob-1x.jpg 1x,
                     ./images/courses-img4-mob-2x.jpg 2x
                   "
-                  media="(max-width: 767px)"
+                  media="(max-width: 1279px)"
                 />
                 <img
                   src="./images/courses-img4-mob-1x.jpg"
@@ -233,7 +263,7 @@
                     ./images/courses-img5-mob-1x.jpg 1x,
                     ./images/courses-img5-mob-2x.jpg 2x
                   "
-                  media="(max-width: 767px)"
+                  media="(max-width: 1279px)"
                 />
                 <img
                   src="./images/courses-img5-mob-1x.jpg"
@@ -247,7 +277,7 @@
             </li>
           </ul>
         </div>
-      </section>-->
+      </section>
       <section class="feedbacks" id="feedbacks">
         <div class="container">
           <h2 class="section-title">Відгуки</h2>

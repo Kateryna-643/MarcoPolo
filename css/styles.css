@@ -63,8 +63,6 @@ button {
     margin-left: auto;
 }
 
-
-
 .mob-menu {
     background-color: #EF7568;
     padding-top: 24px;
@@ -211,6 +209,10 @@ button {
     margin-bottom: 36px;
 }
 
+.about-img {
+    display: none;
+}
+
 .about-list-title {
     display: flex;
     align-items: center;
@@ -230,7 +232,6 @@ button {
     display: flex;
     gap: 14px;
     align-items: center;
-    margin-bottom: ;
 }
 
 .list-item-text {
@@ -408,15 +409,56 @@ button {
     align-items: center;
 }
 
+.menu-tab-list {
+    display: none;
+}
+
+
 @media screen and (min-width:768px) {
 
     .container {
         min-width: 768px;
         padding: 0 60px;
-        }
+    }
+    
+    .mob-menu-icon {
+        display: none;
+    }
+
+    .menu-tab-list {
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
+        margin-left: auto;
+    }
+
+    .menu-tab-item {
+        font-weight: 600;
+        font-size: 20px;
+        color: #fffcff;
+        text-shadow:
+            -1px -1px 0 rgba(0, 0, 0, 0.25),
+            1px -1px 0 rgba(0, 0, 0, 0.25),
+            -1px 1px 0 rgba(0, 0, 0, 0.25),
+            1px 1px 0 rgba(0, 0, 0, 0.25);
+    }
+
 
     .hero {
         background-image: linear-gradient(rgba(36, 33, 33, 0.16), rgba(36, 33, 33, 0.16)), url(/images/hero-tab-1x.jpg);
+        width: 768px;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-title {
+        font-size: 56px;
+    }
+
+    .hero-btn {
+        font-size: 14px;
     }
 
     .footer {
@@ -434,6 +476,29 @@ button {
         justify-content: space-between;
         margin-bottom: 80px;
     }
+
+    .about-text {
+        text-align: center;
+        margin-bottom: 36px;
+    }
+
+    .about-img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .about-list {
+        row-gap: 24px;
+        column-gap: 60px;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .about-list-item {
+        width: calc((100% - 60px) / 2);
+    }
+
+
 
     
 }
