@@ -39,6 +39,20 @@
             <a href="#feedbacks">Відгуки</a>
           </li>
         </ul>
+        <address class="address-desktop">
+          <ul class="contacts-list">
+            <li class="contacts-list-item">
+              <a href="tel:+11111-111-11-11" class="contacts-link-desktop"
+                >+11111-111-11-11</a
+              >
+            </li>
+            <li class="contacts-list-item">
+              <a href="mailto:school@mail.com" class="contacts-link-desktop"
+                >school@mail.com</a
+              >
+            </li>
+          </ul>
+        </address>
       </div>
       <div class="mob-menu">
         <button class="menu-close-btn" type="button">
@@ -114,66 +128,84 @@
       </section>
       <section class="about" id="about">
         <div class="container">
-          <h2 class="section-title">Про нас</h2>
-          <p class="about-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
+          <div class="about-left">
+            <h2 class="section-title">Про нас</h2>
+            <p class="about-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <picture>
+              <source
+                srcset="
+                  ./images/about-tab-1x.jpg 1x,
+                  ./images/about-tab-2x.jpg 2x
+                "
+                media="(min-width:768px)"
+              />
+              <source
+                srcset="
+                  ./images/about-dt-1x.jpg 1x,
+                  ./images/about-dt-2x.jpg 2x
+                "
+                media="(min-width:1280px)"
+              />
+              <img
+                src="./images/about-tab-1x.jpg"
+                class="about-img"
+                alt="Про нас"
+                width="480"
+              />
+            </picture>
+            <div class="about-list-title">
+              <svg width="176" height="25">
+                <use href="./images/symbol-defs.svg#icon-marcopolo-logo"></use>
+              </svg>
+              <p>- це:</p>
+            </div>
+            <ul class="about-list">
+              <li class="about-list-item">
+                <svg class="about-list-icon" width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-queue-icon"></use>
+                </svg>
+                <p class="list-item-text">500+ задоволених студентів</p>
+              </li>
+              <li class="about-list-item">
+                <svg class="about-list-icon" width="20" height="20">
+                  <use
+                    href="./images/symbol-defs.svg#icon-online-training-icon"
+                  ></use>
+                </svg>
+                <p class="list-item-text">заняття з носіями мови</p>
+              </li>
+              <li class="about-list-item">
+                <svg class="about-list-icon" width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-calendar-icon"></use>
+                </svg>
+                <p class="list-item-text">8+ років досвіду</p>
+              </li>
+              <li class="about-list-item">
+                <svg class="about-list-icon" width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-clock-icon"></use>
+                </svg>
+                <p class="list-item-text">гнучкий графік занять</p>
+              </li>
+            </ul>
+          </div>
           <picture>
-            <source
-              srcset="
-                ./images/about-tab-1x.jpg 1x,
-                ./images/about-tab-2x.jpg 2x
-              "
-              media="(min-width:768px)"
-            />
             <source
               srcset="./images/about-dt-1x.jpg 1x, ./images/about-dt-2x.jpg 2x"
               media="(min-width:1280px)"
             />
             <img
-              src="./images/about-tab-1x.jpg"
-              class="about-img"
+              src="./images/about-dt-1x.jpg"
+              class="about-img-dt"
               alt="Про нас"
-              width="480"
+              width="580"
+              height="580"
             />
           </picture>
-          <div class="about-list-title">
-            <svg width="176" height="25">
-              <use href="./images/symbol-defs.svg#icon-marcopolo-logo"></use>
-            </svg>
-            <p>- це:</p>
-          </div>
-          <ul class="about-list">
-            <li class="about-list-item">
-              <svg class="about-list-icon" width="20" height="20">
-                <use href="./images/symbol-defs.svg#icon-queue-icon"></use>
-              </svg>
-              <p class="list-item-text">500+ задоволених студентів</p>
-            </li>
-            <li class="about-list-item">
-              <svg class="about-list-icon" width="20" height="20">
-                <use
-                  href="./images/symbol-defs.svg#icon-online-training-icon"
-                ></use>
-              </svg>
-              <p>заняття з носіями мови</p>
-            </li>
-            <li class="about-list-item">
-              <svg class="about-list-icon" width="20" height="20">
-                <use href="./images/symbol-defs.svg#icon-calendar-icon"></use>
-              </svg>
-              <p>8+ років досвіду</p>
-            </li>
-            <li class="about-list-item">
-              <svg class="about-list-icon" width="20" height="20">
-                <use href="./images/symbol-defs.svg#icon-clock-icon"></use>
-              </svg>
-              <p>гнучкий графік занять</p>
-            </li>
-          </ul>
         </div>
       </section>
       <section class="courses" id="courses">
@@ -188,6 +220,13 @@
                     ./images/courses-img1-mob-2x.jpg 2x
                   "
                   media="(max-width:1279px)"
+                />
+                <source
+                  srcset="
+                    ./images/courses-img1-dt-1x.jpg 1x,
+                    ./images/courses-img1-dt-2x.jpg 2x
+                  "
+                  media="(min-width:1280px)"
                 />
                 <img
                   src="./images/courses-img1-mob-1x.jpg"
@@ -208,6 +247,13 @@
                   "
                   media="(max-width: 1279px)"
                 />
+                <source
+                  srcset="
+                    ./images/courses-img2-dt-1x.jpg 1x,
+                    ./images/courses-img2-dt-2x.jpg 2x
+                  "
+                  media="(min-width:1280px)"
+                />
                 <img
                   src="./images/courses-img2-mob-1x.jpg"
                   class="card-img"
@@ -226,6 +272,13 @@
                     ./images/courses-img3-mob-2x.jpg 2x
                   "
                   media="(max-width: 1279px)"
+                />
+                <source
+                  srcset="
+                    ./images/courses-img3-dt-1x.jpg 1x,
+                    ./images/courses-img3-dt-2x.jpg 2x
+                  "
+                  media="(min-width:1280px)"
                 />
                 <img
                   src="./images/courses-img3-mob-1x.jpg"
@@ -246,6 +299,13 @@
                   "
                   media="(max-width: 1279px)"
                 />
+                <source
+                  srcset="
+                    ./images/courses-img4-dt-1x.jpg 1x,
+                    ./images/courses-img4-dt-2x.jpg 2x
+                  "
+                  media="(min-width:1280px)"
+                />
                 <img
                   src="./images/courses-img4-mob-1x.jpg"
                   class="card-img"
@@ -265,6 +325,13 @@
                   "
                   media="(max-width: 1279px)"
                 />
+                <source
+                  srcset="
+                    ./images/courses-img5-dt-1x.jpg 1x,
+                    ./images/courses-img5-dt-2x.jpg 2x
+                  "
+                  media="(min-width:1280px)"
+                />
                 <img
                   src="./images/courses-img5-mob-1x.jpg"
                   class="card-img"
@@ -282,7 +349,7 @@
         <div class="container">
           <h2 class="section-title">Відгуки</h2>
           <ul class="feedbacks-list">
-            <div class="feedback-card">
+            <li class="feedback-card">
               <div class="feedback-top">
                 <p class="feedback-text">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -308,6 +375,13 @@
                     "
                     media="(max-width: 1279px)"
                   />
+                  <source
+                    srcset="
+                      ./images/feedbacks-img1-dt-1x.png 1x,
+                      ./images/feedbacks-img1-dt-2x.png 2x
+                    "
+                    media="(min-width: 1280px)"
+                  />
                   <img
                     src="./images/feedbacks-img1-mob-1x.png"
                     class="feedback-img"
@@ -316,8 +390,8 @@
                   />
                 </picture>
               </div>
-            </div>
-            <div class="feedback-card">
+            </li>
+            <li class="feedback-card">
               <div class="feedback-top">
                 <p class="feedback-text">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -343,6 +417,13 @@
                     "
                     media="(max-width: 1279px)"
                   />
+                  <source
+                    srcset="
+                      ./images/feedbacks-img2-dt-1x.png 1x,
+                      ./images/feedbacks-img2-dt-2x.png 2x
+                    "
+                    media="(min-width: 1280px)"
+                  />
                   <img
                     src="./images/feedbacks-img2-mob-1x.png"
                     class="feedback-img"
@@ -351,8 +432,8 @@
                   />
                 </picture>
               </div>
-            </div>
-            <div class="feedback-card">
+            </li>
+            <li class="feedback-card">
               <div class="feedback-top">
                 <p class="feedback-text">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -378,6 +459,13 @@
                     "
                     media="(max-width: 1279px)"
                   />
+                  <source
+                    srcset="
+                      ./images/feedbacks-img3-dt-1x.png 1x,
+                      ./images/feedbacks-img3-dt-2x.png 2x
+                    "
+                    media="(min-width: 1280px)"
+                  />
                   <img
                     src="./images/feedbacks-img3-mob-1x.png"
                     class="feedback-img"
@@ -386,7 +474,7 @@
                   />
                 </picture>
               </div>
-            </div>
+            </li>
           </ul>
         </div>
       </section>
